@@ -18,23 +18,14 @@ monitors:
   - id: digitalniplan-hr
     name: digitalniplan.hr
     url: 'https://www.digitalniplan.hr/'
-    method: GET
-    expectedStatus: 200
-    followRedirect: false
     linkable: false
     
   - id: igrackedenis-hr
     name: igrackedenis.hr
     url: 'https://igrackedenis.hr/'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
     linkable: false
     
   - id: igrackedenis-ba
     name: igrackedenis.ba
     url: 'https://igrackedenis.ba/'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
     linkable: false
