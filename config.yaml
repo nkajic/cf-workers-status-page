@@ -24,6 +24,11 @@ monitors:
     name: aviteh.hr
     url: 'https://www.aviteh.hr/'
     linkable: false
+
+  - id: beautypharmacy-hr
+    name: beautypharmacy.hr
+    url: 'https://www.beautypharmacy.hr/'
+    linkable: false
     
   - id: igrackedenis-hr
     name: igrackedenis.hr
