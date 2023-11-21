@@ -30,6 +30,11 @@ monitors:
     url: 'https://www.beautypharmacy.hr/'
     linkable: false
     
+  - id: bebastore-hr
+    name: bebastore.hr
+    url: 'https://www.bebastore.hr/'
+    linkable: false
+    
   - id: igrackedenis-hr
     name: igrackedenis.hr
     url: 'https://igrackedenis.hr/'
