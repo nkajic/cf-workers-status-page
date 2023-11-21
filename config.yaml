@@ -35,6 +35,11 @@ monitors:
     url: 'https://igrackedenis.ba/'
     linkable: false
 
+  - id: ljekarna-fett-hr
+    name: ljekarna-fett.hr
+    url: 'https://www.ljekarna-fett.hr/'
+    linkable: false
+
   - id: zonatri-hr
     name: zonatri.hr
     url: 'https://www.zonatri.hr/'
