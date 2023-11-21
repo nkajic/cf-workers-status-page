@@ -19,6 +19,11 @@ monitors:
     name: digitalniplan.hr
     url: 'https://www.digitalniplan.hr/'
     linkable: false
+
+  - id: aviteh-hr
+    name: aviteh.hr
+    url: 'https://www.aviteh.hr/'
+    linkable: false
     
   - id: igrackedenis-hr
     name: igrackedenis.hr
@@ -28,4 +33,9 @@ monitors:
   - id: igrackedenis-ba
     name: igrackedenis.ba
     url: 'https://igrackedenis.ba/'
+    linkable: false
+
+  - id: zonatri-hr
+    name: zonatri.hr
+    url: 'https://www.zonatri.hr/'
     linkable: false
