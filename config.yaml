@@ -50,6 +50,11 @@ monitors:
     url: 'https://www.ljekarna-fett.hr/'
     linkable: false
 
+  - id: socap-hr
+    name: socap.hr
+    url: 'https://www.socap.hr/'
+    linkable: false
+
   - id: zonatri-hr
     name: zonatri.hr
     url: 'https://www.zonatri.hr/'
