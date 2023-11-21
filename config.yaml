@@ -34,6 +34,11 @@ monitors:
     name: bebastore.hr
     url: 'https://www.bebastore.hr/'
     linkable: false
+
+  - id: eljekarna-hr
+    name: eljekarna.hr
+    url: 'https://www.eljekarna.hr/'
+    linkable: false
     
   - id: igrackedenis-hr
     name: igrackedenis.hr
