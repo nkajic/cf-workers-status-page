@@ -1,18 +1,18 @@
 settings:
-  title: 'Status Page'
+  title: 'DPlan Status'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 60
   collectResponseTimes: true
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)'
+  allmonitorsOperational: 'Sve radi kako spada'
+  notAllmonitorsOperational: 'Ne radi sve kako spada'
+  monitorLabelOperational: 'Radi'
+  monitorLabelNotOperational: 'Ne radi'
+  monitorLabelNoData: 'Nema podataka'
+  dayInHistogramNoData: 'Nema podataka'
+  dayInHistogramOperational: 'Sve je kako spada'
+  dayInHistogramNotOperational: ' incident(a)'
 
 monitors:
   - id: digitalniplan-hr
@@ -53,6 +53,11 @@ monitors:
   - id: igrackedenis-ba
     name: igrackedenis.ba
     url: 'https://igrackedenis.ba/'
+    linkable: false
+
+  - id: lackovic-hr
+    name: lackovic.hr
+    url: 'https://www.lackovic.hr'
     linkable: false
 
   - id: ljekarna-fett-hr
