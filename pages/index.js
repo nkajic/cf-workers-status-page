@@ -84,18 +84,6 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             />
           )
         })}
-        <!-- <div className="mt-4 text-xs">
-          <div>
-            Powered by{' '}
-            <a href="https://workers.cloudflare.com/" target="_blank">
-              Cloudflare Workers{' '}
-            </a>
-            &{' '}
-            <a href="https://flareact.com/" target="_blank">
-              Flareact{' '}
-            </a>
-          </div>
-        </div> -->
       </div>
     </div>
   )
