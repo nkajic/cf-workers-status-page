@@ -62,7 +62,7 @@ monitors:
 
   - id: lackovic-hr
     name: lackovic.hr
-    url: 'https://www.lackovic.hr'
+    url: 'https://www.lackovic.hr/'
     linkable: false
 
   - id: ljekarna-fett-hr
