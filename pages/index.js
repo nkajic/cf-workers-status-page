@@ -73,9 +73,6 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             <img className="h-8 w-auto" src={config.settings.logo} />
             <h1 className="ml-4 text-3xl">{config.settings.title}</h1>
           </div>
-          <div className="flex flex-row items-center">
-            {typeof window !== 'undefined' && <ThemeSwitcher />}
-          </div>
         </div>
         <MonitorStatusHeader kvMonitorsLastUpdate={kvMonitorsLastUpdate} />
         {state.visible.map((monitor, key) => {
@@ -87,7 +84,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             />
           )
         })}
-        <div className="mt-4 text-xs">
+        <!-- <div className="mt-4 text-xs">
           <div>
             Powered by{' '}
             <a href="https://workers.cloudflare.com/" target="_blank">
@@ -97,7 +94,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             <a href="https://flareact.com/" target="_blank">
               Flareact{' '}
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
