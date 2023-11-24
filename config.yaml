@@ -55,6 +55,11 @@ monitors:
     url: 'https://igrackedenis.ba/'
     linkable: false
 
+  - id: shopland-hr
+    name: shopland.hr
+    url: 'https://www.shopland.hr/'
+    linkable: false
+
   - id: lackovic-hr
     name: lackovic.hr
     url: 'https://www.lackovic.hr'
