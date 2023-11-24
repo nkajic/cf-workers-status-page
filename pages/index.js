@@ -94,8 +94,8 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             <a href="https://flareact.com/" target="_blank">
               Flareact{' '}
             </a>
-          </div> -->
-        </div>
+          </div>
+        </div> -->
       </div>
     </div>
   )
