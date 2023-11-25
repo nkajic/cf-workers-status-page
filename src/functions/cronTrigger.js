@@ -132,11 +132,11 @@ export async function processCronTrigger(event) {
         checkLocation
       ].n
 
-      const min = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min || 999999
-      if (requestTime < min) {
-        min = requestTime
-      }
-      monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min = min
+      // const min = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min || 999999
+      // if (requestTime < min) {
+      //  min = requestTime
+      // }
+      // monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min = min
       
       // const max = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max || 0
       // if (requestTime > max) {
