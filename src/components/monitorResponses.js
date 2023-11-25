@@ -11,7 +11,6 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
   
   return (
     <div className="text-gray-400 text-sm">
-      {content}
     </div>
   )
 }
