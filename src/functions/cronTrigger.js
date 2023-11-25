@@ -120,6 +120,8 @@ export async function processCronTrigger(event) {
           checkLocation
         ] = {
           n: 0,
+          min: 999999,
+          max: 0,
           ms: 0,
           a: 0,
         }
@@ -129,6 +131,19 @@ export async function processCronTrigger(event) {
       const no = ++monitorsState.monitors[monitor.id].checks[checkDay].res[
         checkLocation
       ].n
+
+      const min = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min
+      if (requestTime < min) {
+        min = requestTime
+      }
+      monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min = min
+      
+      const max = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max
+      if (requestTime > max) {
+        max = requestTime
+      }
+      monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max = max
+      
       const ms = (monitorsState.monitors[monitor.id].checks[checkDay].res[
         checkLocation
       ].ms += requestTime)
