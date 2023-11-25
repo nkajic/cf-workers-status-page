@@ -5,6 +5,7 @@ settings:
   daysInHistogram: 60
   collectResponseTimes: true
 
+
   allmonitorsOperational: 'Sve radi kako spada'
   notAllmonitorsOperational: 'Ne radi sve kako spada'
   monitorLabelOperational: 'Radi'
