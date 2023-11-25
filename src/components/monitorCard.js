@@ -1,6 +1,7 @@
 import config from '../../config.yaml'
 import MonitorStatusLabel from './monitorStatusLabel'
 import MonitorHistogram from './monitorHistogram'
+import MonitorResponses from './monitorResponses'
 
 const infoIcon = (
   <svg
@@ -54,6 +55,9 @@ export default function MonitorCard({ key, monitor, data }) {
         <div>Prije {config.settings.daysInHistogram} dana</div>
         <div>Danas</div>
       </div>
+
+      <MonitorResponses monitorId={monitor.id} kvMonitor={data} />
+      
     </div>
   )
 }
