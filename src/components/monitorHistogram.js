@@ -47,9 +47,9 @@ export default function MonitorHistogram({ monitorId, kvMonitor }) {
                   return (
                     <MonitorDayAverage
                       location={key}
-                      min={kvMonitor.checks[dayInHistogram].res[key].min || '?'}
-                      max={kvMonitor.checks[dayInHistogram].res[key].max || '?'}
-                      avg={kvMonitor.checks[dayInHistogram].res[key].a   || '?'}
+                      min={kvMonitor.checks[dayInHistogram].res[key].min || '-'}
+                      max={kvMonitor.checks[dayInHistogram].res[key].max || '-'}
+                      avg={kvMonitor.checks[dayInHistogram].res[key].a   || '-'}
                     />
                   )
                 })}
