@@ -138,11 +138,11 @@ export async function processCronTrigger(event) {
       }
       monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min = min
       
-      const max = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max || 0
-      if (requestTime > max) {
-        max = requestTime
-      }
-      monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max = max
+      // const max = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max || 0
+      // if (requestTime > max) {
+      //  max = requestTime
+      // }
+      // monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max = max
       
       const ms = (monitorsState.monitors[monitor.id].checks[checkDay].res[
         checkLocation
