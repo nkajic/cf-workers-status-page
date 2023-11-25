@@ -3,9 +3,9 @@ import config from '../../config.yaml'
 
 export default function MonitorResponses({ monitorId, kvMonitor }) {
 
-  let date = new Date()
-  const dayInHistogram = date.toISOString().split('T')[0]
-  let content = dayInHistogram
+  // let date = new Date()
+  // const dayInHistogram = date.toISOString().split('T')[0]
+  // let content = dayInHistogram
 
   
   
