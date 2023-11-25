@@ -1,5 +1,5 @@
 settings:
-  title: 'Shop status'
+  title: 'Status page'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 60
