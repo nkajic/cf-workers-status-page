@@ -138,7 +138,7 @@ export async function processCronTrigger(event) {
       }
       monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min = min || 999999
       
-      const max = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max
+      const max = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max || 0
       if (requestTime > max) {
         max = requestTime
       }
