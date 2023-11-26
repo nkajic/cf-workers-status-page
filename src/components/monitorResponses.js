@@ -12,6 +12,16 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
 
   let content = JSON.stringify(reqs)
 
+  content = Array.from(Array(reqs).keys()).map((key) => {
+
+
+      return (
+        <div>
+          {key}
+        </div>
+      )
+    
+  })
   
   
   return (
