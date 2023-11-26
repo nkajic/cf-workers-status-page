@@ -23,7 +23,7 @@ export default function MonitorCard({ key, monitor, data }) {
   const [toggle, setToggle] = useState(false)
   return (
     <div key={key} className={toggle ? 'card open' : 'card'}>
-      <button onClick={() => setToggle(true)}>Otpri {open} lol</button>
+      <button onClick={() => setToggle(true)}>Otpri {toggle} lol</button>
       <div className="flex flex-row justify-between items-center mb-2">
         <div className="flex flex-row items-center align-center">
           {monitor.description && (
