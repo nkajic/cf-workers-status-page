@@ -35,7 +35,7 @@ export default function MonitorHistogram({ monitorId, kvMonitor }) {
         return (
           <div key={key} className="hitbox tooltip">
             <div className={`${bg} bar`} />
-            <div className="content text-center py-1 px-2 mt-2 left-1/2 -ml-20 w-40 text-xs">
+            <div className="content text-center py-1 px-2 mt-2 left-1/4 -ml-20 w-44 text-xs">
               {dayInHistogram}
               <br />
               <span className="font-semibold text-sm">
@@ -50,6 +50,7 @@ export default function MonitorHistogram({ monitorId, kvMonitor }) {
                       min={kvMonitor.checks[dayInHistogram].res[key].min || '-'}
                       max={kvMonitor.checks[dayInHistogram].res[key].max || '-'}
                       avg={kvMonitor.checks[dayInHistogram].res[key].a   || '-'}
+                      n={kvMonitor.checks[dayInHistogram].res[key].n     || '-'}
                     />
                   )
                 })}
