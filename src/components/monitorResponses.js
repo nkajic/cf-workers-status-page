@@ -12,7 +12,7 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
 
   let content = JSON.stringify(reqs)
 
-  content = Array.from(Array(reqs).keys()).map((key) => {
+  content = Array.from(Object.keys(reqs)).map((key) => {
 
 
       return (
