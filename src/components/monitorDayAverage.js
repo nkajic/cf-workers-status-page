@@ -10,7 +10,8 @@ export default function MonitorDayAverage({ location, min, max, avg, n }) {
     <>
       <br />
       <small>
-        {locations[location] || location}: {min} / {max} / {avg} sec (n={n})
+        {locations[location] || location} (n={n}):<br />
+        {min} / {max} / {avg} sec 
       </small>
     </>
   )
