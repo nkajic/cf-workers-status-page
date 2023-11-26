@@ -14,10 +14,11 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
 
   content = Array.from(Object.keys(reqs)).map((key) => {
 
-
+      let responseTime = reqs[key]
+      
       return (
         <div>
-          {key}
+          {key} {responseTime}
         </div>
       )
     
