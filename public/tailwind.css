@@ -18,7 +18,11 @@
   }
 
   .card .responses {
-    @apply invisible;
+    @apply hidden;
+  }
+
+  .card.open .responses {
+    @apply block;
   }
 
   .pill {
