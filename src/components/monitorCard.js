@@ -26,7 +26,8 @@ export default function MonitorCard({ key, monitor, data }) {
   };
   
   return (
-    <div key={key} className="card {isCardOpen ? 'open' : ''}" onClick={toggleCardOpen}>
+    <div key={key} className="card {isCardOpen ? 'open' : ''}">
+      <button onClick={toggleCardOpen}>Otpri</button>
       <div className="flex flex-row justify-between items-center mb-2">
         <div className="flex flex-row items-center align-center">
           {monitor.description && (
