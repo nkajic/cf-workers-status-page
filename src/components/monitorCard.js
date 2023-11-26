@@ -20,14 +20,14 @@ const infoIcon = (
 )
 
 export default function MonitorCard({ key, monitor, data }) {
-  const [isCardOpen, setIsCardOpen] = useState(1);
+  const [open, setIsCardOpen] = useState(false)
   const toggleCardOpen = () => {
-    setIsCardOpen(isCardOpen() + 1)
+    setIsCardOpen(!open)
   };
   
   return (
-    <div key={key} className='card open'>
-      <button onClick={toggleCardOpen}>Otpri {isCardOpen} xoxo</button>
+    <div key={key} className={open ? 'card open' : 'card'>
+      <button onClick={toggleCardOpen}>Otpri {String(open)} xoxoxo</button>
       <div className="flex flex-row justify-between items-center mb-2">
         <div className="flex flex-row items-center align-center">
           {monitor.description && (
