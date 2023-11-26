@@ -20,10 +20,10 @@ const infoIcon = (
 )
 
 export default function MonitorCard({ key, monitor, data }) {
-  let open = false
+  let openjj = false
   return (
     <>
-    <div key={key} className={open ? 'card open' : 'card'}>
+    <div key={key} className={openjj === true ? 'card open' : 'card'}>
       <div className="flex flex-row justify-between items-center mb-2">
         <div className="flex flex-row items-center align-center">
           {monitor.description && (
