@@ -2,6 +2,7 @@ import config from '../../config.yaml'
 import MonitorStatusLabel from './monitorStatusLabel'
 import MonitorHistogram from './monitorHistogram'
 import MonitorResponses from './monitorResponses'
+import {useState} from 'react';
 
 const infoIcon = (
   <svg
@@ -19,8 +20,13 @@ const infoIcon = (
 )
 
 export default function MonitorCard({ key, monitor, data }) {
+  const [isCardOpen, setIsCardOpen] = useState(false);
+  const toggleCardOpen = event => {
+    setIsCardOpen(current => !current);
+  };
+  
   return (
-    <div key={key} className="card">
+    <div key={key} className="card {isCardOpen ? 'open' : ''}" onClick={toggleCardOpen}>
       <div className="flex flex-row justify-between items-center mb-2">
         <div className="flex flex-row items-center align-center">
           {monitor.description && (
