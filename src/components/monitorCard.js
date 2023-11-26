@@ -20,12 +20,7 @@ const infoIcon = (
 )
 
 export default function MonitorCard({ key, monitor, data }) {
-  const [open, setIsCardOpen] = useState(false)
-  
-  const toggleCardOpen = () => {
-    setIsCardOpen(!open)
-  };
-  
+  let open = false
   return (
     <div key={key} className={open ? 'card open' : 'card'>
       <button onClick={toggleCardOpen}>Otpri {String(open)} xoxoxo</button>
