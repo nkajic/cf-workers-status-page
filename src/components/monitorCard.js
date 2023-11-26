@@ -22,7 +22,7 @@ const infoIcon = (
 export default function MonitorCard({ key, monitor, data }) {
   const [isCardOpen, setIsCardOpen] = useState(false);
   const toggleCardOpen = () => {
-    setIsCardOpen(current => !current);
+    setIsCardOpen(isCardOpen());
   };
   
   return (
