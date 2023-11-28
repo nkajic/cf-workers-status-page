@@ -15,11 +15,11 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
   content = Array.from(Object.keys(reqs)).map((key) => {
       let time = key.slice(0, 8)
       let responseTime = parseInt(reqs[key])
-      let color = 'text-gray-500'
+      let color = 'text-gray-800'
       if (responseTime > 1000) {
-        color = 'text-orange-600'
+        color = 'text-yellow-800'
       } else if (responseTime > 2000) {
-        color = 'text-red-700'
+        color = 'text-red-800'
       }
       
       return (
