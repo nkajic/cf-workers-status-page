@@ -23,8 +23,8 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
       }
       
       return (
-        <div>
-          {time}
+        <div class="item">
+          {time}{` `}
           <span className={color}>
             {responseTime}
           </span>
@@ -36,8 +36,10 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
   
   return (
     <div className="responses text-gray-400 text-sm">
-    Zagreb times: <br />
-    {content}
+      Response times from Zagreb only:<br />
+      <div class="list">
+        {content}
+      </div>
     </div>
   )
 }
