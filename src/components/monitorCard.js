@@ -2,8 +2,6 @@ import config from '../../config.yaml'
 import MonitorStatusLabel from './monitorStatusLabel'
 import MonitorHistogram from './monitorHistogram'
 import MonitorResponses from './monitorResponses'
-import TestComponent from './testComponent'
-
 import {useState} from 'react';
 
 const infoIcon = (
@@ -22,12 +20,9 @@ const infoIcon = (
 )
 
 export default function MonitorCard({ key, monitor, data }) {
-
   const [open, setOpen] = useState(false)
-  
   return (
     <div key={key} className={`card ${open ? "open" : ""}`}>
-      <button onClick={() => setOpen(true)}>Otpri</button>
       <div className="flex flex-row justify-between items-center mb-2">
         <div className="flex flex-row items-center align-center">
           {monitor.description && (
@@ -62,8 +57,9 @@ export default function MonitorCard({ key, monitor, data }) {
         <div>Prije {config.settings.daysInHistogram} dana</div>
         <div>Danas</div>
       </div>
+
+      <button onClick={() => setOpen(!open)}>{`${open ? "Sakrij" : "Prikaži"}`} detalje</button>
       
-      <TestComponent />
       <MonitorResponses monitorId={monitor.id} kvMonitor={data} />
       
     </div>
