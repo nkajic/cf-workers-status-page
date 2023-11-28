@@ -45,6 +45,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
     <div className="min-h-screen">
       <Head>
         <title>{config.settings.title}</title>
+        <meta name="robots" content="noindex, nofollow" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="theme-color" content="#fff" />
