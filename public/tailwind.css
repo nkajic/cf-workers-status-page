@@ -28,7 +28,7 @@
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-    gap: 15px;
+    gap: 25px;
   }
   .card.open .responses .list .item span {
     float: right;
