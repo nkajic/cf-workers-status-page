@@ -45,10 +45,10 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
     <div className="min-h-screen">
       <Head>
         <title>{config.settings.title}</title>
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="noindex,nofollow" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content="#1f2a37" />
         <link rel="stylesheet" href="./style.css" />
         <script>
           {`
@@ -58,15 +58,16 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             localStorage.theme = theme
           }
           (() => {
-            const query = window.matchMedia("(prefers-color-scheme: dark)")
-            query.addListener(() => {
-              setTheme(query.matches ? "dark" : "light")
-            })
-            if (["dark", "light"].includes(localStorage.theme)) {
-              setTheme(localStorage.theme)
-            } else {
-              setTheme(query.matches ? "dark" : "light")
-            }
+            // const query = window.matchMedia("(prefers-color-scheme: dark)")
+            // query.addListener(() => {
+            //   setTheme(query.matches ? "dark" : "light")
+            // })
+            // if (["dark", "light"].includes(localStorage.theme)) {
+            //   setTheme(localStorage.theme)
+            // } else {
+            //   setTheme(query.matches ? "dark" : "light")
+            // }
+            setTheme("dark")
           })()
           `}
         </script>
