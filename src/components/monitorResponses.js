@@ -2,7 +2,6 @@ import React from 'react'
 import config from '../../config.yaml'
 
 export default function MonitorResponses({ monitorId, kvMonitor }) {
-
   const LOC = 'ZAG'
   
   let date = new Date()
@@ -10,15 +9,14 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
   const location = kvMonitor.checks[dayInHistogram].res[LOC] || {}
   const reqs = location.r || {}
 
-  let content = JSON.stringify(reqs)
-
-  content = Array.from(Object.keys(reqs)).map((key) => {
+  let content = Array.from(Object.keys(reqs)).map((key) => {
       let time = key.slice(0, 8)
       let responseTime = parseInt(reqs[key])
       let color = 'text-green-200'
       if (responseTime > 1000) {
         color = 'text-yellow-200'
-      } else if (responseTime > 2000) {
+      }
+      if (responseTime > 1500) {
         color = 'text-red-200'
       }
       
