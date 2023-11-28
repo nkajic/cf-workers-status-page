@@ -17,7 +17,7 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
         color = 'text-yellow-200'
       }
       if (responseTime > 1500) {
-        color = 'text-red-200'
+        color = 'text-red-800'
       }
       
       return (
