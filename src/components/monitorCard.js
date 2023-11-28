@@ -2,6 +2,8 @@ import config from '../../config.yaml'
 import MonitorStatusLabel from './monitorStatusLabel'
 import MonitorHistogram from './monitorHistogram'
 import MonitorResponses from './monitorResponses'
+import TestComponent from './testComponent'
+
 import {useState} from 'react';
 
 const infoIcon = (
@@ -56,7 +58,8 @@ export default function MonitorCard({ key, monitor, data }) {
         <div>Prije {config.settings.daysInHistogram} dana</div>
         <div>Danas</div>
       </div>
-
+      
+      <TestComponent />
       <MonitorResponses monitorId={monitor.id} kvMonitor={data} />
       
     </div>
