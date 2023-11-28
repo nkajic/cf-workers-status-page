@@ -13,12 +13,12 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
   let content = JSON.stringify(reqs)
 
   content = Array.from(Object.keys(reqs)).map((key) => {
-
+      let time = key.slice(0, 7)
       let responseTime = reqs[key]
       
       return (
         <div>
-          {key} {responseTime}
+          {time} {responseTime}
         </div>
       )
     
