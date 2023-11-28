@@ -24,6 +24,11 @@
   .card.open .responses {
     @apply block;
   }
+  .card.open .responses .list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
 
   .pill {
     @apply px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full;
