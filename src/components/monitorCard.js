@@ -22,8 +22,12 @@ const infoIcon = (
 )
 
 export default function MonitorCard({ key, monitor, data }) {
+
+  const [open, setOpen] = useState(false)
+  
   return (
-    <div key={key} className="card">
+    <div key={key} className={`card ${open ? "open" : ""}`}
+      <button onClick={() => setOpen(true)}>Otpri</button>
       <div className="flex flex-row justify-between items-center mb-2">
         <div className="flex flex-row items-center align-center">
           {monitor.description && (
