@@ -58,7 +58,9 @@ export default function MonitorCard({ key, monitor, data }) {
         <div>Danas</div>
       </div>
 
-      <button onClick={() => setOpen(!open)}>{`${open ? "Sakrij" : "Prikaži"}`} detalje</button>
+      <button onClick={() => setOpen(!open)}>
+        {`${open ? "Sakrij" : "Prikaži"}`} detalje
+      </button>
       
       <MonitorResponses monitorId={monitor.id} kvMonitor={data} />
       
