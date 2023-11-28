@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
 
 export default function TestComponent() {
-  let someFlag = 'Keks1'
+  const [count, setCount] = useState(0);
   return (
     <div>
-      1
-      someFlag: {someFlag}
+      <p>{count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
     </div>
-  )
+  );
 }
