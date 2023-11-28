@@ -85,3 +85,9 @@ monitors:
     name: zonatri.hr
     url: 'https://www.zonatri.hr/'
     linkable: false
+
+  - id: jav-namj-hr
+    name: javorovicin-namjestaj.hr
+    url: 'https://www.javorovicin-namjestaj.hr/'
+    linkable: false
+    
