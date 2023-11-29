@@ -28,7 +28,7 @@ export default function MonitorCard({ key, monitor, data }) {
           {monitor.description && (
             <div className="tooltip">
               {infoIcon}
-              <div className="content text-center transform -translate-y-1/2 top-1/2 ml-8 w-72 text-sm object-left">
+              <div className="content text-center transform -translate-y-1/2 top-1/2 ml-8 w-60 text-sm object-left">
                 {monitor.description}
               </div>
             </div>
