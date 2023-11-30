@@ -35,7 +35,7 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
   return (
     <div className="responses text-gray-400 text-xs">
       <p>Vrijeme odgovora za upit iz Zagreba (ms):</p>
-      <div class="list">
+      <div className="list columns-3 lg:columns-4 xl:columns-5">
         {content}
       </div>
     </div>
