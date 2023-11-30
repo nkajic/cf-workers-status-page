@@ -35,7 +35,7 @@ export default function MonitorHistogram({ monitorId, kvMonitor }) {
         return (
           <div key={key} className="hitbox tooltip">
             <div className={`${bg} bar`} />
-            <div className="content py-1 px-2 mt-2 -left-5 -ml-40 w-40 text-xs">
+            <div className="content py-1 px-2 mt-2 -left-5 -ml-36 w-40 text-xs">
               {dayInHistogram}
               <br />
               <span className="font-semibold text-sm">
