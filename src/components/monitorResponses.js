@@ -21,7 +21,7 @@ export default function MonitorResponses({ monitorId, kvMonitor }) {
       }
       
       return (
-        <div class="{`item ${itemClass}`}">
+        <div class={`item ${itemClass}`}>
           {time}{` `}
           <span>
             {responseTime}
