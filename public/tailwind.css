@@ -26,10 +26,7 @@
   }
   
   .card.open .responses .list {
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    gap: 15px;
+    @apply grid grid-rows-3 grid-flow-col gap-4;
   }
 
   .card.open .responses .list .item span {
