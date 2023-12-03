@@ -25,11 +25,21 @@
     @apply block;
   }
   
-  .card.open .responses .list {
+  .card .responses .list {
     columns: 3;
     -webkit-columns: 3;
     -moz-columns: 3;
     gap: 15px;
+  }
+
+  .card .responses .list .item.good span {
+    @apply text-green-300;
+  }
+  .card .responses .list .item.warning span {
+    @apply text-yellow-200;
+  }
+  .card .responses .list .item.not-good span {
+    @apply text-red-500;
   }
 
   .card.open .responses .list .item span {
