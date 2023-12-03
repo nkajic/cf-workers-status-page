@@ -77,7 +77,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           `}
         </script>
       </Head>
-      <div className={`container max-w-3xl mx-auto px-4 ${showGood ? 'show-good' : ''}`}>
+      <div className={`container max-w-3xl mx-auto px-4 ${showGood ? 'show-good' : ''}${showWarning ? 'show-warning' : ''}${showNotGood ? 'show-not-good' : ''}`}>
         <div className="flex flex-row justify-between items-center p-4">
           <div className="flex flex-row items-center">
             <img className="h-8 w-auto" src={config.settings.logo} />
