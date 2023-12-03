@@ -8,6 +8,7 @@ import MonitorCard from '../src/components/monitorCard'
 import MonitorFilter from '../src/components/monitorFilter'
 import MonitorStatusHeader from '../src/components/monitorStatusHeader'
 import ThemeSwitcher from '../src/components/themeSwitcher'
+import {useState} from 'react';
 
 const MonitorStore = new Store({
   monitors: config.monitors,
@@ -40,6 +41,10 @@ export async function getEdgeProps() {
 export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
   const state = useStore(MonitorStore)
   const slash = useKeyPress('/')
+
+  const [showGood, setShowGood] = useState(true)
+  const [showWarning, setShowWarning] = useState(true)
+  const [showNotGood, setShowNotGood] = useState(true)
 
   return (
     <div className="min-h-screen">
@@ -80,6 +85,12 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           </div>
         </div>
         <MonitorStatusHeader kvMonitorsLastUpdate={kvMonitorsLastUpdate} />
+
+        <button onClick={() => setShowGood(!showGood)}>
+        {`${showGood ? "Sakrij" : "Prikaži"}`} dobre
+        {` ${showGood ? "▲" : "▼"}`}
+        </button>
+        
         {state.visible.map((monitor, key) => {
           return (
             <MonitorCard
