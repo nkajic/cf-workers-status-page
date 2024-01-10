@@ -31,10 +31,10 @@ monitors:
     url: 'https://www.beautypharmacy.hr/'
     linkable: false
 
-  - id: beautypharmacy-si
-    name: beautypharmacy.si
-    url: 'https://www.beautypharmacy.si/'
-    linkable: false
+  #- id: beautypharmacy-si
+  #  name: beautypharmacy.si
+  #  url: 'https://www.beautypharmacy.si/'
+  #  linkable: false
     
   - id: bebastore-hr
     name: bebastore.hr
