@@ -16,14 +16,19 @@ settings:
   dayInHistogramNotOperational: ' incident(a)'
 
 monitors:
-  #- id: digitalniplan-hr
-  #  name: digitalniplan.hr
-  #  url: 'https://www.digitalniplan.hr/'
-  #  linkable: false
+  - id: digitalniplan-hr
+    name: digitalniplan.hr
+    url: 'https://www.digitalniplan.hr/'
+    linkable: false
 
   - id: aviteh-hr
     name: aviteh.hr
     url: 'https://www.aviteh.hr/'
+    linkable: false
+
+  - id: aviteh-ba
+    name: aviteh.ba
+    url: 'https://preview.aviteh.hr/'
     linkable: false
 
   - id: beautypharmacy-hr
