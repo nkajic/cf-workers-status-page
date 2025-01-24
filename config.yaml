@@ -81,6 +81,11 @@ monitors:
     url: 'https://www.pharmashop.hr/'
     linkable: false
 
+  - id: repromaterijali-com
+    name: repromaterijali.com
+    url: 'https://repromaterijali.com/'
+    linkable: false
+
   - id: socap-hr
     name: socap.hr
     url: 'https://www.socap.hr/'
