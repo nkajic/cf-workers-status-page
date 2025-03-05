@@ -12,6 +12,10 @@ import {
 function getDate() {
   return new Date().toISOString().split('T')[0]
 }
+function getTime() {
+  return new Date().toISOString().split('T')[1]
+}
+
 
 export async function processCronTrigger(event) {
   // Get Worker PoP and save it to monitorsStateMetadata
@@ -120,8 +124,11 @@ export async function processCronTrigger(event) {
           checkLocation
         ] = {
           n: 0,
+          min: 999999,
+          max: 0,
           ms: 0,
           a: 0,
+          r: {} // All response times from day
         }
       }
 
@@ -129,6 +136,24 @@ export async function processCronTrigger(event) {
       const no = ++monitorsState.monitors[monitor.id].checks[checkDay].res[
         checkLocation
       ].n
+
+      let min = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min || 999999
+      if (requestTime < min) {
+        min = requestTime
+      }
+      monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].min = min
+      
+      let max = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max || 0
+      if (requestTime > max) {
+        max = requestTime
+      }
+      monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].max = max
+
+      let r = monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].r || {}
+      let time = getTime()
+      r[time] = requestTime
+      monitorsState.monitors[monitor.id].checks[checkDay].res[checkLocation].r = r
+      
       const ms = (monitorsState.monitors[monitor.id].checks[checkDay].res[
         checkLocation
       ].ms += requestTime)

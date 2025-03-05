@@ -1,6 +1,8 @@
 import config from '../../config.yaml'
 import MonitorStatusLabel from './monitorStatusLabel'
 import MonitorHistogram from './monitorHistogram'
+import MonitorResponses from './monitorResponses'
+import {useState} from 'react';
 
 const infoIcon = (
   <svg
@@ -18,14 +20,15 @@ const infoIcon = (
 )
 
 export default function MonitorCard({ key, monitor, data }) {
+  const [open, setOpen] = useState(false)
   return (
-    <div key={key} className="card">
+    <div key={key} className={`card ${open ? "open" : ""}`}>
       <div className="flex flex-row justify-between items-center mb-2">
         <div className="flex flex-row items-center align-center">
           {monitor.description && (
             <div className="tooltip">
               {infoIcon}
-              <div className="content text-center transform -translate-y-1/2 top-1/2 ml-8 w-72 text-sm object-left">
+              <div className="content text-center transform -translate-y-1/2 top-1/2 ml-8 w-60 text-sm object-left">
                 {monitor.description}
               </div>
             </div>
@@ -51,9 +54,17 @@ export default function MonitorCard({ key, monitor, data }) {
       <MonitorHistogram monitorId={monitor.id} kvMonitor={data} />
 
       <div className="flex flex-row justify-between items-center text-gray-400 text-sm">
-        <div>{config.settings.daysInHistogram} days ago</div>
-        <div>Today</div>
+        <div>Prije {config.settings.daysInHistogram} dana</div>
+        <div>Danas</div>
       </div>
+
+      <button onClick={() => setOpen(!open)}>
+        {`${open ? "Sakrij" : "Prikaži"}`} detalje
+        {` ${open ? "▲" : "▼"}`}
+      </button>
+      
+      <MonitorResponses monitorId={monitor.id} kvMonitor={data} />
+      
     </div>
   )
 }

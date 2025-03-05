@@ -25,6 +25,7 @@ addEventListener('fetch', (event) => {
     }
     event.respondWith(new Response('Internal Error', { status: 500 }))
   }
+  event.waitUntil(processCronTrigger(event));
 })
 
 addEventListener('scheduled', (event) => {

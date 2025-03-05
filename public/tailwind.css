@@ -7,6 +7,24 @@
     @apply bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-50;
   }
 
+  .good,
+  .warning,
+  .not-good {
+    @apply hidden;
+  }
+
+  .show-good .good {
+    @apply block;
+  }
+
+  .show-warning .warning {
+    @apply block;
+  }
+
+  .show-not-good .not-good {
+    @apply block;
+  }
+
   a {
     @apply text-blue-500 dark:text-blue-400;
   }
@@ -15,6 +33,35 @@
 @layer components {
   .card {
     @apply p-4 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 shadow rounded-lg p-4 mb-2;
+  }
+
+  .card .responses {
+    @apply hidden;
+  }
+
+  .card.open .responses {
+    @apply block;
+  }
+  
+  .card .responses .list {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    gap: 15px;
+  }
+
+  .card .responses .list .item.good span {
+    @apply text-green-300;
+  }
+  .card .responses .list .item.warning span {
+    @apply text-yellow-200;
+  }
+  .card .responses .list .item.not-good span {
+    @apply text-red-500;
+  }
+
+  .card.open .responses .list .item span {
+    float: right;
   }
 
   .pill {
