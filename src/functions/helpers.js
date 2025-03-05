@@ -1,8 +1,6 @@
-import yaml from 'js-yaml';
 import fs from 'node:fs';
-import path from 'node:path';
 
-const config = yaml.load(fs.readFileSync(path.resolve(__dirname, '../../config.yaml'), 'utf8'));
+const config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../config.json'), 'utf8'));
 
 import { useEffect, useState } from 'react'
 
