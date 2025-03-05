@@ -1,7 +1,4 @@
-import fs from 'node:fs';
-
-const configPath = path.resolve(__dirname, '../../config.json');
-const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+import config from '../../config.json';
 
 import {
   notifySlack,

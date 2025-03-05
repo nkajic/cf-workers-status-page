@@ -1,6 +1,4 @@
-import fs from 'node:fs';
-
-const config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../config.json'), 'utf8'));
+import config from '../../config.json';
 
 import { useEffect, useState } from 'react'
 
