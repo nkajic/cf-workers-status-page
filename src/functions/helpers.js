@@ -1,6 +1,6 @@
 import yaml from 'js-yaml';
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 
 const config = yaml.load(fs.readFileSync(path.resolve(__dirname, '../../config.yaml'), 'utf8'));
 
