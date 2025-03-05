@@ -1,4 +1,4 @@
-import config from '../../config.json';
+import config from '../../app-config.json';
 
 import { useEffect, useState } from 'react'
 
