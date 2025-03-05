@@ -2711,7 +2711,7 @@ __metadata:
     react: "npm:^16.13.1"
     react-dom: "npm:^16.13.1"
     tailwindcss: "npm:^2"
-    yaml-loader: "npm:^0.6.0"
+    yaml-loader: "npm:^0.8.1"
   languageName: unknown
   linkType: soft
 
@@ -6145,6 +6145,13 @@ __metadata:
     "@pkgjs/parseargs":
       optional: true
   checksum: 10c0/6acc10d139eaefdbe04d2f679e6191b3abf073f111edf10b1de5302c97ec93fffeb2fdd8681ed17f16268aa9dd4f8c588ed9d1d3bffbbfa6e8bf897cbb3149b9
+  languageName: node
+  linkType: hard
+
+"javascript-stringify@npm:^2.0.1":
+  version: 2.1.0
+  resolution: "javascript-stringify@npm:2.1.0"
+  checksum: 10c0/374e74ebff29b94de78da39daa6e530999c58a145aeb293dc21180c4584459b14d9e5721d9bc6ed4eba319c437ef0145c157c946b70ecddcff6668682a002bcc
   languageName: node
   linkType: hard
 
@@ -11471,20 +11478,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml-loader@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "yaml-loader@npm:0.6.0"
+"yaml-loader@npm:^0.8.1":
+  version: 0.8.1
+  resolution: "yaml-loader@npm:0.8.1"
   dependencies:
-    loader-utils: "npm:^1.4.0"
-    yaml: "npm:^1.8.3"
-  checksum: 10c0/8c8e9c284721a1bcff6c70e412929a6f321ab6a15b6209f4e658be05b57dfa0a64b0d69f3ca62fdcd46b31e6bc536faca2c8d6c04c8070ccce4d1c9da79569b4
+    javascript-stringify: "npm:^2.0.1"
+    loader-utils: "npm:^2.0.0"
+    yaml: "npm:^2.0.0"
+  checksum: 10c0/4bb4789c8ace38067ff68a67fba27626c0793f4d001a485d2334bff7c4fed73ee1696bee287949a834c3387655df2e27e3d7c52ad7d3c20cd5c5ecbff320ff57
   languageName: node
   linkType: hard
 
-"yaml@npm:^1.10.0, yaml@npm:^1.10.2, yaml@npm:^1.8.3":
+"yaml@npm:^1.10.0, yaml@npm:^1.10.2":
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: 10c0/5c28b9eb7adc46544f28d9a8d20c5b3cb1215a886609a2fd41f51628d8aaa5878ccd628b755dbcd29f6bb4921bd04ffbc6dcc370689bb96e594e2f9813d2605f
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.0.0":
+  version: 2.7.0
+  resolution: "yaml@npm:2.7.0"
+  bin:
+    yaml: bin.mjs
+  checksum: 10c0/886a7d2abbd70704b79f1d2d05fe9fb0aa63aefb86e1cb9991837dced65193d300f5554747a872b4b10ae9a12bc5d5327e4d04205f70336e863e35e89d8f4ea9
   languageName: node
   linkType: hard
 
