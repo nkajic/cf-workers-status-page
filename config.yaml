@@ -4,8 +4,6 @@ settings:
   logo: logo.png # image in ./public/ folder
   daysInHistogram: 90
   collectResponseTimes: false
-
-
   allmonitorsOperational: 'Sve radi kako spada'
   notAllmonitorsOperational: 'Ne radi sve kako spada'
   monitorLabelOperational: 'Radi'
