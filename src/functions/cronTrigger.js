@@ -1,4 +1,9 @@
-import config from '../../config.yaml'
+import fs from 'fs';
+import path from 'path';
+import yaml from 'js-yaml';
+
+const configPath = path.resolve(__dirname, '../../config.yaml');
+const config = yaml.load(fs.readFileSync(configPath, 'utf8'));
 
 import {
   notifySlack,
