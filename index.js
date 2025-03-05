@@ -1,3 +1,6 @@
+
+global = globalThis;
+
 import { handleEvent } from 'flareact'
 import { processCronTrigger } from './src/functions/cronTrigger'
 

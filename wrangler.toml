@@ -2,7 +2,7 @@ name = "cf-workers-status-page"
 workers_dev = true
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
-compatibility_date = "2021-07-23"
+compatibility_date = "2024-03-05"
 main = "index.js"
 compatibility_flags = ["nodejs_compat"]
 
