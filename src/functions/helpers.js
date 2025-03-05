@@ -1,4 +1,9 @@
-import config from '../../config.yaml'
+import yaml from 'js-yaml';
+import fs from 'fs';
+import path from 'path';
+
+const config = yaml.load(fs.readFileSync(path.resolve(__dirname, '../../config.yaml'), 'utf8'));
+
 import { useEffect, useState } from 'react'
 
 const kvDataKey = 'monitors_data_v1_1'
