@@ -25,7 +25,7 @@ monitors:
     url: 'https://www.aviteh.hr/'
     linkable: false
 
-  - id: aviteh-ba
+  - id: aviteh-ba-2
     name: aviteh.ba
     url: 'https://www.aviteh.ba/'
     linkable: false
@@ -60,6 +60,11 @@ monitors:
     url: 'https://www.shopland.hr/'
     linkable: false
 
+  - id: euromdenis-rs
+    name: euromdenis.rs
+    url: 'https://euromdenis.rs'
+    linkable: false
+    
   - id: lackovic-hr
     name: lackovic.hr
     url: 'https://www.lackovic.hr/'
