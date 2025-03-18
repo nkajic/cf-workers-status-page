@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'Status'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 30 # number of days you want to display in histogram
@@ -25,7 +25,7 @@ monitors:
     url: 'https://www.aviteh.hr/'
     linkable: false
 
-  - id: aviteh-ba-2
+  - id: aviteh-ba
     name: aviteh.ba
     url: 'https://www.aviteh.ba/'
     linkable: false
